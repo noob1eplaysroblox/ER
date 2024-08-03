@@ -16,6 +16,10 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     height: 100vh;
     background-color: var(--white);
@@ -139,11 +143,17 @@ header {
     text-shadow: 1px 1px 10px var(--off-white);
     box-shadow: 1px 1px 10px var(--black);
     background-color: var(--dark-gray);
+    display: inline;
     color: var(--white);
 }
 
-#applications, #departments {
+#about, #applications/*, #departments*/ {
     margin-top: 3rem;
+}
+
+.aboutus {
+    font-size: 1.5rem;
+    margin: 2rem 1rem;
 }
 
 .application-list {
@@ -155,7 +165,7 @@ header {
 .application {
     background-color: var(--gray);
     color: var(--white);
-    padding: 1rem 1rem;
+    padding: 4rem 8rem;
     border-radius: 10px;
     box-shadow: 1px 1px 10px var(--dark-gray);
     transition: all 0.2s;
@@ -167,11 +177,11 @@ header {
 }
 
 .application-title {
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 .view-application {
-    padding: 1rem 2rem;
+    padding: 0.5rem 1.5rem;
     border: none;
     border-radius: 20px;
     margin-top: 1rem;
@@ -188,15 +198,154 @@ header {
 .view-application a {
     text-decoration: none;
     color: var(--black);
-    font-size: 1rem;
+    font-size: 2rem;
 }
 
 .application-status {
     color: var(--green);
     font-weight: bold;
+    font-size: 1.5rem;
 }
 
-@media (max-width: 736px) {
+@media (max-width: 1765px) {
+    .application {
+        padding: 2rem 7rem;
+    }
+
+    .application-title {
+        font-size: 1.5rem;
+    }
+
+    .view-application a {
+        font-size: 1rem;
+    }
+
+    .application-status {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 1245px) {
+    .application {
+        padding: 2rem 4rem;
+    }
+
+    .application-title {
+        font-size: 1.5rem;
+    }
+
+    .view-application a {
+        font-size: 1rem;
+    }
+
+    .application-status {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 975px) {
+    .application {
+        padding: 2rem 2rem;
+    }
+
+    .application-title {
+        font-size: 1.5rem;
+    }
+
+    .view-application a {
+        font-size: 1rem;
+    }
+
+    .application-status {
+        font-size: 1rem;
+    }
+
+    .head {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 760px) {
+    .application {
+        padding: 1.5rem 1rem;
+    }
+
+    .application-title {
+        font-size: 1.5rem;
+    }
+
+    .view-application a {
+        font-size: 1rem;
+    }
+
+    .application-status {
+        font-size: 1rem;
+    }
+
+    .aboutus {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 660px) {
+    .application {
+        padding: 1rem 0.6rem;
+    }
+
+    .application-title {
+        font-size: 1.5rem;
+    }
+
+    .view-application a {
+        font-size: 1rem;
+    }
+
+    .application-status {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 570px) {
+    .head {
+        font-size: 1.7rem;
+    }
+
+    .aboutus {
+        font-size: 0.7rem;
+    }
+
+    .application-list {
+        display: block;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .application {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .head {
+        font-size: 1.2rem;
+    }
+
+    .aboutus {
+        font-size: 0.9rem;
+    }
+
+    .application-list {
+        display: block;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .application {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 835px) {
     .navbar .links {
         display: none;
     }
